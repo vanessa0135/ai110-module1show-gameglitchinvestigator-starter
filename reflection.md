@@ -50,9 +50,16 @@ I saw where the changed needed to happen as Claude highlighted it for me, and co
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
-- Describe at least one test you ran (manual or using pytest)  
-  and what it showed you about your code.
+
+I determined whether a bug was fixed with test cases that Claude generated. I also checked by running the app and checking the features myself if they did as intended 
+
+- Describe at least one test you ran (manual or using pytest) and what it showed you about your code.
+
+One of the test that I ran was manually checking that the range of the chosen mode changes when the user selects easy, normal or hard. It showed me how the code was responding accurately with the users input.
+
 - Did AI help you design or understand any tests? How?
+
+Yes it did help me a lot. Starting off i didnt know where to look to understand the code and program and the bugs. But when I asked Claude to explain each function to me and it explained how they worked, easily helping me figure out the bugs in the functions.
 
 ---
 

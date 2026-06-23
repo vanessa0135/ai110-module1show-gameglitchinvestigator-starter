@@ -50,7 +50,7 @@ if "history" not in st.session_state:
 
 st.subheader("Make a guess")
 
-#fixed the error of the hardcoded range with Claude. It said "1 to 100" but now its using the low and high values from the easy, normal or hard mode
+#FIX: fixed the error of the hardcoded range with Claude. It said "1 to 100" but now its using the low and high values from the easy, normal or hard mode
 st.info(
     f"Guess a number between {low} and {high}. "
     f"Attempts left: {attempt_limit - st.session_state.attempts}"

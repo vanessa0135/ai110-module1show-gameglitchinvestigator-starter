@@ -1,3 +1,5 @@
+#FIX: Refactored logic functions from app.py into logic_utils.py using Claude Code
+
 def get_range_for_difficulty(difficulty: str):
     if difficulty == "Easy":
         return 1, 20
@@ -29,7 +31,7 @@ def parse_guess(raw: str):
 def check_guess(guess, secret):
     if guess == secret:
         return "Win", "🎉 Correct!"
-    #fixed the return messages to say the correct feedback
+    #FIX: fixed the return messages to say the correct feedback; Used Claude Code to change return messages
     try:
         if guess > secret:
             return "Too High", "📉 Go LOWER!"
@@ -51,7 +53,7 @@ def update_score(current_score: int, outcome: str, attempt_number: int):
             points = 10
         return current_score + points
     
-    #fixed the penalization so that it doesnt award the user for guessing even numbers
+    #FIX: fixed the penalization so that it doesnt award the user for guessing even numbers; Used claude code to remove the lines causing logical error
     if outcome == "Too High":
         return current_score - 5
 
