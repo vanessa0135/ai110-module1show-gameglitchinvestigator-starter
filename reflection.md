@@ -67,11 +67,22 @@ Yes it did help me a lot. Starting off i didnt know where to look to understand 
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+From the best of my understanding, streamlit reruns updates the whole app but running the program from top to bottom for everytime the user interacts with it. Session state is what is able to save the data between the reruns.
+
+
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+
+Definetly using pytest to test out different cases on my program, checking whether its logic errors, syntax errors, etc.
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+
+Pay closer attention to what Claude said to me. Sometimes I would read quickly and miss some of the information, leading me to ask a similar question right after and wasting my tokens. 
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+It made me have a more positive perspective on AI generated code, moving away from the idea of soley "vibe coding"
